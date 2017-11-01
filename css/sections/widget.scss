@@ -1,0 +1,21 @@
+.widget {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 582px;
+  height: 438px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.44);
+  font-family: 'dosislight';
+}

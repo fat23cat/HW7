@@ -1,0 +1,40 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(../images/background_widget.jpg)  no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: auto;
+	flex-direction: column;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+  list-style-type: none;
+}
+
+.wait {
+	cursor: wait;
+}

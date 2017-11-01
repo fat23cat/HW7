@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, user-scalable=no, maximum-scale=1, width=device-width">
+  <title>Weather</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script type="text/javascript" src="js/script.js" defer=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+</head>
+
+<body>
+  <div class="city">
+    <input type="text" placeholder="Input city..." autofocus class="citytext" id="city">
+    <span class="searchbtn" id="searchcity"><img src="images/search.png"></span>
+  </div>
+  <div class="widget">
+    <div class="location-and-date">
+      <div class="location-and-date__gradient">
+        <img src="images/no-l.svg" alt="" class="location-and-date__weather-pic" id="bigweather">
+      </div>
+      <div class="location-and-date__weather">
+        <span class="location-and-date__weather-text" id="textweather">-</span>
+      </div>
+      <div class="location-and-date__date">
+        <span class="location-and-date__date-text" id="locationanddate">-</span>
+      </div>
+    </div>
+    <div class="forecast">
+      <div class="forecast__temp">
+        <span class="forecast__temp-text" id="bigtemp">-°C</span>
+      </div>
+      <div class="forecast__graph" id="svggraph">
+        <svg width="209" height="53">
+          <polyline points="4,25 42,25 84,25 126,25 166,25 204,25" fill="rgb(255,255,255)" stroke-width="1" stroke="rgb(119, 25, 33)"/>
+          <circle cx="4" cy="25" r="3" fill="rgb(255,255,255)" stroke-width="2" stroke="rgb(119, 25, 33)"/>
+          <circle cx="42" cy="25" r="3" fill="rgb(255,255,255)" stroke-width="2" stroke="rgb(119, 25, 33)"/>
+          <circle cx="84" cy="25" r="3" fill="rgb(255,255,255)" stroke-width="2" stroke="rgb(119, 25, 33)"/>
+          <circle cx="126" cy="25" r="3" fill="rgb(255,255,255)" stroke-width="2" stroke="rgb(119, 25, 33)"/>
+          <circle cx="166" cy="25" r="3" fill="rgb(255,255,255)" stroke-width="2" stroke="rgb(119, 25, 33)"/>
+          <circle cx="204" cy="25" r="3" fill="rgb(255,255,255)" stroke-width="2" stroke="rgb(119, 25, 33)"/>
+        </svg>
+      </div>
+      <div class="weather-by-days" id="3daysweather">
+        <ul class="weather-list">
+          <li><img src="images/no-d.svg" class="weather-list__img" alt=""></li>
+          <li><span class="weather-list__day">-</span></li>
+          <li><span class="weather-list__temp weather-list__temp--day">-°C</span></li>
+          <li><span class="weather-list__temp weather-list__temp--night">-°C</span></li>
+        </ul>
+        <ul class="weather-list">
+          <li><img src="images/no-d.svg" class="weather-list__img" alt=""></li>
+          <li><span class="weather-list__day">-</span ></li>
+	    			<li><span class="weather-list__temp weather-list__temp--day">-°C</span></li>
+          <li><span class="weather-list__temp weather-list__temp--night">-°C</span></li>
+        </ul>
+        <ul class="weather-list">
+          <li><img src="images/no-d.svg" class="weather-list__img" alt=""></li>
+          <li><span class="weather-list__day">-</span></li>
+          <li><span class="weather-list__temp weather-list__temp--day">-°C</span></li>
+          <li><span class="weather-list__temp weather-list__temp--night">-°C</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

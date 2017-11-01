@@ -1,0 +1,127 @@
+@media screen and (max-width: 768px) {
+  .widget {
+    width: 437px;
+  }
+
+  .forecast {
+    width: 291px;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+  }
+
+  .location-and-date {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 145px;
+  }
+  .location-and-date__gradient {
+    display: none;
+  }
+
+  .location-and-date__weather-pic {
+    display: none;
+  }
+  .location-and-date__weather, .location-and-date__date {
+		height: 50%;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-moz-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-moz-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+  .location-and-date__weather-text {
+    font-size: 30px;
+		height: auto;
+  }
+
+  .location-and-date__date-text {
+    font-size: 20px;
+		height: auto;
+  }
+
+  .location-and-date__weather {
+    -webkit-border-radius: 4px 0 0 0;
+    border-radius: 4px 0 0 0;
+  }
+
+  .location-and-date__date {
+    text-align: center;
+  }
+
+  .weather-by-days {
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .widget {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 291px;
+		height: auto;
+  }
+
+  .location-and-date {
+    width: 100%;
+  }
+
+  .forecast {
+    width: 100%;
+  }
+
+  .location-and-date {
+    border: 0;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .location-and-date__weather {
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .location-and-date__date {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+
+	.location-and-date__weather-text {
+		font-size: 30px;
+		padding: 5px 0;
+	}
+
+	.location-and-date__date-text {
+		font-size: 20px;
+		padding: 5px 0;
+	}
+
+  .forecast {
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+  }
+}
