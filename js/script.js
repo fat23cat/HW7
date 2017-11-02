@@ -86,8 +86,11 @@ function createDate(param, day) {
   switch (param) {
     case "long":
       return days[date.getDay()] + ", " + month[date.getMonth()] + " " + date.getDate();
+      break;
     case "short":
-      return daysShort[date.getDay() + day];
+      date.setDate(date.getDate() + day);
+      return daysShort[date.getDay()];
+      break;
   }
 }
 
